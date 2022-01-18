@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>HTML Template til React</title>
+</head>
+
+<body>
+
+    <div id="root"></div>
+    <div id="two"></div>
+    <div id="three"></div>
+    <div id="four"></div>
+    <div id="five"></div>
+    <div id="six"></div>
+    <div id="seven"></div>
+    <div id="eight"></div>
+    <div id="nine"></div>
+    <div id="ten"></div>
+
+
+    <script type="text/babel">
+
+        ReactDOM.render(
+        <h2>JSX er godt for maven!</h2>, document.getElementById('root') ); ReactDOM.render( 10*10, document.getElementById('two') ); ReactDOM.render(
+        <ol>
+            <li>Færøsk æbelkage</li>
+            <li>Lassange</li>
+            <li>Boller i karry</li>
+            <li>Pasta Pølser</li>
+            <li>Pølsemix</li>
+
+        </ol>, document.getElementById('three') ); const four = (
+        <article>
+
+            <p> Afsnit 1 - React components implement a render() method that takes input data and returns what to display. This example uses an XML-like syntax called JSX. Input data that is passed into the component can be accessed by render() via this.props.
+            </p>
+            <p>Afsnit 2 - React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.</p>
+        </article>
+        ); ReactDOM.render( four, document.getElementById('four') ); const five = (
+        <>
+
+            <p> Afsnit 1 - React components implement a render() method that takes input data and returns what to display. This example uses an XML-like syntax called JSX. Input data that is passed into the component can be accessed by render() via this.props.
+            </p>
+            <p>Afsnit 2 - React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.</p>
+            </> ); ReactDOM.render( five, document.getElementById('five') ); ReactDOM.render(
+            <input type="color" />, document.getElementById('six') ); const seven =
+            <section className="mainwrapper">Hej verden</section>;ReactDOM.render( seven, document.getElementById('seven') ); const x = 12; let text = "Godmorgen"; if (x
+            < 12) { text="Goddag" ; } const eight=< h1>{text}</h1>; ReactDOM.render( eight, document.getElementById('eight') ); const y = 12; const nine =
+                <h1>{(y) > 11 ? "Godmorgen" : "Goddag"}</h1>;ReactDOM.render( nine, document.getElementById('nine') );
+    </script>
+
+</body>
+
+</html>

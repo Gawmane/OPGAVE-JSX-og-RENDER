@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>LISTE OVER LIVRETTER</title>
+  </head>
+  <body>
+
+    <div id="hest"></div>
+
+    <script type="text/babel">
+      // Her skal du indsætte din react kode
+    
+  
+    const Livretter = [
+        'Færøsk æbelkage',
+        'Lassange',
+        'Pasta/Pølser',
+        'Boller i karry',
+'Burger'
+]
+
+const List = (props) => {
+return(
+    <>
+    <ul>
+        {props.data.map(Livretter =>{
+            return(
+                 <li> {Livretter}</li>
+            )
+        })}
+        </ul>
+    </>
+)
+}
+    ReactDOM.render(
+        <List data={Livretter} />, document.getElementById('hest') )
+    </script>
+
+  </body>
+</html>
